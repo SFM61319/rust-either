@@ -145,6 +145,9 @@ pub use self::iterator::IterEither;
 mod into_either;
 pub use self::into_either::IntoEither;
 
+mod apply_either;
+pub use self::apply_either::ApplyEither;
+
 impl<L: Clone, R: Clone> Clone for Either<L, R> {
     fn clone(&self) -> Self {
         match self {
